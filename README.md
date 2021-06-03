@@ -20,7 +20,7 @@ To generate a new template sheet, just run:
 
 ```python
 python3 produce_answer_sheet.py \
-        --qr_text "Althayr Santos de Nazaret" \
+        --qr_text "Althayr Santos de Nazaret, 11502414" \
         --dst "./example_student_answer_sheet.png"
 ```
 
@@ -34,4 +34,16 @@ For each question the grader supports assignment of one, more than one or no ans
 python3 grader.py \
         --n-questions 20 \
         --image ./images/answer_sheets/camera_shot_sheet.png
+```
+
+## Grading all examples
+
+Under `./images/answer_sheets/` there are many different images already assigned and ready to be graded.
+
+You can evaluate all of them in bulk by running:
+
+**Note:** The last two are expected to produce errors, the first one has answers different than the default ones under `config.py`, and the second one is a empty sheet.
+
+```python
+python3 grade_examples.py
 ```

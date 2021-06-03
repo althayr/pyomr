@@ -3,7 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks
 
 ## Project specific
-example_student_answer_sheet.png
+./example_student_answer_sheet.png
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks

@@ -361,7 +361,7 @@ def evaluate_answers(marks, n_questions):
             print(f"{i} : Marked {marks[i]} - Should be {config.ANSWERS[i]}")
             errors += 1
     print(
-        f"Finished evaluation | {n_questions} questions | {n_questions-errors} correct | {errors} fails"
+        f"Finished evaluation | {n_questions} questions | {n_questions-errors} corrects | {errors} errors"
     )
 
 
@@ -372,7 +372,7 @@ def run_pipeline(img_path, n_questions, debug=False):
 
     gray = to_gray(img)
     qr_text, qr_coords = get_qrcode_info(img)
-    # print(qr_coords)
+    print(f"QRCode Text : '{qr_text.decode()}'")
 
     contours, _ = find_contours(gray)
     corner_contours = find_corner_contours(contours)
