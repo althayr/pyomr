@@ -47,3 +47,87 @@ You can evaluate all of them in bulk by running:
 ```python
 python3 grade_examples.py
 ```
+
+Expected output:
+
+```bash
+(venv) ~/pyomr$ python3 grade_examples.py 
+Evaluating './images/answer_sheets/rotated_sideways_sheet.png'
+QRCode Text : 'Althayr Santos de Nazaret, 11502414'
+Finished evaluation | 30 questions | 30 corrects | 0 errors
+---
+Evaluating './images/answer_sheets/simple_scanned_sheet.png'
+QRCode Text : 'Althayr Santos de Nazaret, 11502414'
+Finished evaluation | 30 questions | 30 corrects | 0 errors
+---
+Evaluating './images/answer_sheets/flipped_scanned_sheet.png'
+QRCode Text : 'Althayr Santos de Nazaret, 11502414'
+Finished evaluation | 30 questions | 30 corrects | 0 errors
+---
+Evaluating './images/answer_sheets/rotated_scanned_sheet.png'
+QRCode Text : 'Althayr Santos de Nazaret, 11502414'
+Finished evaluation | 30 questions | 30 corrects | 0 errors
+---
+Evaluating './images/answer_sheets/camera_shot_sheet.png'
+QRCode Text : 'Althayr Santos de Nazaret, 11502414'
+Finished evaluation | 30 questions | 30 corrects | 0 errors
+---
+Evaluating './images/answer_sheets/half_page_sheet.png'
+QRCode Text : 'Althayr Santos de Nazaret, 11502414'
+1 : Marked ['B'] - Should be ['A']
+2 : Marked ['B'] - Should be ['D', 'E']
+3 : Marked ['C'] - Should be []
+4 : Marked ['D'] - Should be ['A']
+5 : Marked ['E'] - Should be []
+6 : Marked ['D'] - Should be []
+7 : Marked ['D'] - Should be ['A', 'B']
+8 : Marked [] - Should be ['D']
+9 : Marked [] - Should be ['B', 'C']
+10 : Marked [] - Should be ['E']
+11 : Marked [] - Should be ['B']
+12 : Marked [] - Should be ['C', 'D']
+13 : Marked ['D'] - Should be []
+14 : Marked ['E'] - Should be ['C']
+15 : Marked ['A'] - Should be ['B']
+16 : Marked [] - Should be ['E']
+17 : Marked [] - Should be ['B']
+18 : Marked [] - Should be ['A']
+19 : Marked [] - Should be ['D']
+22 : Marked [] - Should be ['B']
+23 : Marked ['B'] - Should be ['E']
+24 : Marked ['D'] - Should be []
+25 : Marked ['B'] - Should be ['C']
+26 : Marked [] - Should be ['A']
+27 : Marked ['C'] - Should be []
+28 : Marked [] - Should be ['E']
+29 : Marked [] - Should be ['E']
+30 : Marked [] - Should be ['A']
+Finished evaluation | 30 questions | 2 corrects | 28 errors
+---
+Evaluating './images/answer_sheets/example_student_answer_sheet.png'
+QRCode Text : 'Althayr Santos de Nazaret, 11502414'
+1 : Marked [] - Should be ['A']
+2 : Marked [] - Should be ['D', 'E']
+4 : Marked [] - Should be ['A']
+7 : Marked [] - Should be ['A', 'B']
+8 : Marked [] - Should be ['D']
+9 : Marked [] - Should be ['B', 'C']
+10 : Marked [] - Should be ['E']
+11 : Marked [] - Should be ['B']
+12 : Marked [] - Should be ['C', 'D']
+14 : Marked [] - Should be ['C']
+15 : Marked [] - Should be ['B']
+16 : Marked [] - Should be ['E']
+17 : Marked [] - Should be ['B']
+18 : Marked [] - Should be ['A']
+19 : Marked [] - Should be ['D']
+22 : Marked [] - Should be ['B']
+23 : Marked [] - Should be ['E']
+25 : Marked [] - Should be ['C']
+26 : Marked [] - Should be ['A']
+28 : Marked [] - Should be ['E']
+29 : Marked [] - Should be ['E']
+30 : Marked [] - Should be ['A']
+Finished evaluation | 30 questions | 8 corrects | 22 errors
+---
+```
