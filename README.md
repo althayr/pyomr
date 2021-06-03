@@ -1,6 +1,8 @@
 # pyOMR
 
-You can use this library to grade a marked scans or pictures of the template answer sheet. 
+You can use this library to grade a marked scans or pictures of the template answer sheet.
+
+The implemented grader is robust to rotation, and also corrects perspective if the image comes from a phone camera.
 
 ## Installation
 
