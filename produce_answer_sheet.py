@@ -156,9 +156,9 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--dst", type=str, required=True)
+    parser.add_argument("--qr_text", default="Althayr Santos de Nazaret", type=str)
+    parser.add_argument("--title", default="Answer Sheet", type=str)
     args = parser.parse_args()
 
-    text = "Althayr Santos de Nazaret, 11502414"
-    title = "Answer Sheet"
-    student_sheet = produce_mark_sheet(text, title)
+    student_sheet = produce_mark_sheet(args.qr_text, args.title)
     cv2.imwrite(args.dst, student_sheet)
